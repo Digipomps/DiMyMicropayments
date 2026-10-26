@@ -1,0 +1,11 @@
+; RedeemReceipt.v1 canonical payload map (labels 0..7)
+redeem_receipt_v1 = {
+  0: uint,           ; v
+  1: bstr .size 16,  ; receipt_id
+  2: bstr .size 16,  ; spend_id
+  3: uint,           ; status
+  4: uint,           ; value_units
+  5: tstr,           ; currency
+  6: uint,           ; redeemed_at_ms
+  7: uint            ; audit_epoch
+}

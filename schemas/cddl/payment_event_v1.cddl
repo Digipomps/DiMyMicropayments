@@ -1,0 +1,13 @@
+; PaymentEvent.v1 canonical payload map (labels 0..9)
+payment_event_v1 = {
+  0: uint,      ; v
+  1: bstr .size 16, ; event_id
+  2: tstr,      ; psp_id
+  3: tstr,      ; psp_event_ref
+  4: uint,      ; occurred_at_ms
+  5: uint,      ; received_at_ms
+  6: uint,      ; value_units
+  7: tstr,      ; currency
+  8: tstr,      ; identity_domain
+  9: tstr       ; commons_keypath
+}

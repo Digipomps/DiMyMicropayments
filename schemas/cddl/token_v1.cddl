@@ -1,0 +1,11 @@
+; Token.v1 canonical payload map (labels 0..7)
+token_v1 = {
+  0: uint,           ; v
+  1: bstr .size 16,  ; token_id
+  2: bstr .size 16,  ; mint_id
+  3: uint,           ; value_units
+  4: tstr,           ; currency
+  5: tstr,           ; scope_keypath
+  6: bstr .size 32,  ; owner_binding
+  7: uint            ; expires_at_ms
+}
